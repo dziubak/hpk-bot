@@ -17,5 +17,4 @@ public class ReplacementService {
 	public List<Replacement> getAllReplacements() {
 		return replacementDao.getAllReplacements();
 	}
-
 }
