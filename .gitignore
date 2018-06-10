@@ -11,7 +11,7 @@ gradle-app.setting
 .gradletasknamecache
 
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-gradle/wrapper/gradle-wrapper.properties
+gradle/wrapper/
 
 bin/
 
@@ -35,12 +35,8 @@ bin/
 .settings/
 .classpath
 .project
-# Created by https://www.gitignore.io/api/intellij
 
 ### Intellij ###
 .idea/
-## File-based project format:
-*.iws
-# IntelliJ
-/out/
+out/
 
