@@ -1,8 +1,10 @@
-package com.bot.telegram.hpk.services.obtainers;
+package com.bot.telegram.hpk.services.output;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import com.bot.telegram.hpk.services.ReplacementService;
+import org.telegram.telegrambots.api.objects.replykeyboard.ReplyKeyboardMarkup;
+
+import com.bot.telegram.hpk.services.obtainers.IObtainer;
 
 
 /**
@@ -11,13 +13,13 @@ import com.bot.telegram.hpk.services.ReplacementService;
  *
  */
 @Component
-public class ReplacesObtainer implements IObtainerSerivice {
+public class ReplacesObtainer implements IObtainer {
 
 	@Autowired
 	private ReplacementService replacementService;
 
 	@Override
-	public String obtaineMessage(String command) {
+	public String obtainMessage(String command) {
 
 		return getAllReplacementsListInOneMessage();
 	}
@@ -33,5 +35,11 @@ public class ReplacesObtainer implements IObtainerSerivice {
 								+ replacement.getClassroom() + "\n"));
 
 		return replacementsForUser.toString();
+	}
+
+	@Override
+	public ReplyKeyboardMarkup obtainReplyKeyboardMarkup() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
