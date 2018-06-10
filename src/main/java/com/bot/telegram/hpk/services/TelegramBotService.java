@@ -1,5 +1,8 @@
 package com.bot.telegram.hpk.services;
 
+import com.bot.telegram.hpk.services.button.InteractWithUserViaButtonsService;
+import com.bot.telegram.hpk.services.obtainers.ObtainerLookUp;
+import com.bot.telegram.hpk.services.output.TimetableGroupService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.ApiContextInitializer;
@@ -11,24 +14,11 @@ import org.telegram.telegrambots.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
 
-import com.bot.telegram.hpk.services.button.InteractWithUserViaButtonsService;
-import com.bot.telegram.hpk.services.obtainers.ObtainerLookUp;
-import com.bot.telegram.hpk.services.output.TimetableGroupService;
-
 @Service
 public class TelegramBotService extends TelegramLongPollingBot {
 
 	private final static String BOT_USERNAME = "TelegramBotHPK";
 	private final static String BOT_TOKEN = "336211020:AAEVa8mCUJ8toCmRHr1P0SkdsZP52yNuMUE";
-
-	@Autowired
-	private ObtainerLookUp lookerUp;
-
-	@Autowired
-	private InteractWithUserViaButtonsService interactWithUserViaButtonsService;
-
-	@Autowired
-	private TimetableGroupService timetableGroupService;
 
 	/**
 	 * Initialize Api Context
@@ -49,6 +39,16 @@ public class TelegramBotService extends TelegramLongPollingBot {
 			throw new RuntimeException(e);
 		}
 	}
+
+	@Autowired
+	private ObtainerLookUp lookerUp;
+
+	@Autowired
+	private InteractWithUserViaButtonsService interactWithUserViaButtonsService;
+
+	@Autowired
+	private TimetableGroupService timetableGroupService;
+
 
 	@Override
 	public String getBotUsername() {
