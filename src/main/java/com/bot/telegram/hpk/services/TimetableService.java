@@ -1,26 +1,31 @@
 package com.bot.telegram.hpk.services;
 
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
+import com.bot.telegram.hpk.services.util.ScheduleUIConstants;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
-import com.bot.telegram.hpk.component.dao.TimetableDao;
-import com.bot.telegram.hpk.component.entities.Teacher;
-import com.bot.telegram.hpk.component.entities.Timetable;
+import javax.annotation.PostConstruct;
+import javax.xml.ws.Response;
+import java.util.Map;
 
 @Service
 public class TimetableService {
 
-	@Autowired
-	private TimetableDao timetableDao;
+	private final static String GET_TIMETABLE_TIME_URL = "/timetable/time";
 
-	public List<Timetable> getListWithTimetable() {
-		return timetableDao.getListWithTimetable();
-	}
+	@Value("${hpk.api.url}")
+	private String hpkApiUrl;
 
-	public List<Teacher> getAllTeachersList() {
-		return timetableDao.getAllTeachersList();
+	@PostConstruct
+	public void init(){
+		RestTemplate restTemplate = new RestTemplate();
+		ResponseEntity<Map<String, String>> responseEntity = restTemplate.exchange(hpkApiUrl.concat(GET_TIMETABLE_TIME_URL),
+				HttpMethod.GET, null, new ParameterizedTypeReference<Map<String, String>>() {});
+		ScheduleUIConstants.PAIR_TIME = responseEntity.getBody();
 	}
 
 }

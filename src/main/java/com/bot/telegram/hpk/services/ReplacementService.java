@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.bot.telegram.hpk.component.dao.ReplacementDao;
-import com.bot.telegram.hpk.component.entities.Replacement;
+import com.bot.telegram.hpk.component.model.api.Replacement;
 
 @Service
 public class ReplacementService {

@@ -3,12 +3,10 @@ package com.bot.telegram.hpk.component.dao;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.bot.telegram.hpk.component.entities.Replacement;
-import com.bot.telegram.hpk.component.entities.Teacher;
+import com.bot.telegram.hpk.component.model.api.Replacement;
 
 @Repository
 public class ReplacementDao {
@@ -23,10 +21,6 @@ public class ReplacementDao {
 		List<Replacement> replacementsList = jdbcTemplate.query(SQL_GET_ALL_REPLACEMENTS, (rs, arg1) -> {
 			Replacement replacement = new Replacement();
 			replacement.setId(rs.getInt(1));
-			replacement.setSurname(rs.getString(2));
-			replacement.setName(rs.getString(3));
-			replacement.setMiddleName(rs.getString(4));
-			replacement.setInfo(rs.getString(5));
 
 			return replacement;
 		});
