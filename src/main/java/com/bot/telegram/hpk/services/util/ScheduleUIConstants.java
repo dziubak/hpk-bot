@@ -13,12 +13,9 @@ import java.util.Map;
  * Container for text constants.
  */
 public class ScheduleUIConstants {
-    public static final String BOT_START_MAIN = "Я допоможу тобі:\n"
+    public static final String BOT_START_MAIN = "Бот допоможе:\n"
             + "   " + EmojiParser.parseToUnicode(":calendar:") + " швидко та легко отримувати розклад занять\n"
-            + "   " + EmojiParser.parseToUnicode(":envelope_with_arrow:") + " дізнаватись про зміни твого разкладу\n"
-            + "   " + EmojiParser.parseToUnicode(":pushpin:") + " стежити за цікавими подіями\n"
-            + "Питання/пропозиції: @tuzhanskyi"
-
+            + "   " + EmojiParser.parseToUnicode(":envelope_with_arrow:") + " викладача та групи\n"
             + "\nВибери з меню внизу що саме тобі необхідно." + EmojiParser.parseToUnicode(":arrow_down:");
 
     public static final String ASK_TEACHER_NAME = EmojiParser.parseToUnicode(":arrow_right:" ) + " Відправ <b>прізвище</b> викладача.";
