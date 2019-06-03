@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="606bd516-e77e-4f04-a1d1-ade757017384" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/util/ScheduleUIConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/util/ScheduleUIConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/bot/telegram/hpk/services/util/ScheduleUIConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/bot/telegram/hpk/services/util/ScheduleUIConstants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/TelegramBotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/TelegramBotService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -37,12 +39,66 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/util/ScheduleUIConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="18" column="107" lean-forward="true" selection-start-line="18" selection-start-column="107" selection-end-line="18" selection-end-column="107" />
+            <state relative-caret-position="240">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/component/dao/telegram/TelegramUserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/command/group/ShowGroupLessonsCommandHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="69" column="46" lean-forward="true" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/TelegramBotService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="99" column="46" lean-forward="true" selection-start-line="99" selection-start-column="46" selection-end-line="99" selection-end-column="46" />
+              <folding>
+                <element signature="e#4956#4957#0" expanded="true" />
+                <element signature="e#4977#4978#0" expanded="true" />
+                <element signature="e#5020#5021#0" expanded="true" />
+                <element signature="e#5042#5043#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/command/BotCommandRegister.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="51" column="43" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -79,6 +135,7 @@
       <find>ASK_GROUP_NAME</find>
       <find>grpLsn</find>
       <find>cGrpW</find>
+      <find>tuz</find>
     </findStrings>
     <replaceStrings>
       <replace>hpk.api.url</replace>
@@ -106,12 +163,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/component/model/api/Teacher.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/command/ReadTeacherNameCommandHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/command/teacher/ChangeTeacherNameCommandHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/TelegramBotService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/user/TelegramUserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/component/dao/telegram/TelegramUserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/handler/TelegramHandlerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/component/model/api/TimetableTeacher.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/component/model/bot/enums/DayOfWeek.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/component/model/bot/enums/WeekType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/util/CurrentWeekService.java" />
@@ -141,6 +196,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/command/OutOfSubMenuCommandHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/command/CommandNames.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/util/ScheduleUIConstants.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/TelegramBotService.java" />
       </list>
     </option>
   </component>
@@ -290,12 +347,13 @@
       <option name="presentableId" value="Default" />
       <updated>1559485656511</updated>
       <workItem from="1559485657759" duration="27802000" />
-      <workItem from="1559522328392" duration="148000" />
+      <workItem from="1559522328392" duration="359000" />
+      <workItem from="1559563740532" duration="277000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27950000" />
+    <option name="totallyTimeSpent" value="28438000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -309,8 +367,8 @@
       <window_info id="Web" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -369,28 +427,6 @@
     <option name="version" value="1" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/component/dao/telegram/TelegramUserDao.java</url>
-          <line>32</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/command/group/ShowGroupLessonsCommandHandler.java</url>
-          <line>62</line>
-          <properties />
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/command/group/ShowGroupLessonsCommandHandler.java</url>
-          <line>64</line>
-          <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="builder.toUriString()" language="JAVA" />
@@ -492,16 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/component/dao/telegram/TelegramUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/user/TelegramUserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -540,13 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/component/model/api/TimetableTeacher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -576,17 +595,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/command/teacher/CloseCommandHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/TelegramBotService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="69" column="68" selection-start-line="69" selection-start-column="68" selection-end-line="69" selection-end-column="68" />
-          <folding>
-            <element signature="e#4977#4978#0" expanded="true" />
-            <element signature="e#5042#5043#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/command/teacher/ChangeTeacherNameCommandHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-253">
@@ -621,13 +629,6 @@
             <element signature="e#473#474#0" expanded="true" />
             <element signature="e#513#514#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/command/BotCommandRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
         </state>
       </provider>
     </entry>
@@ -814,13 +815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/command/group/ShowGroupLessonsCommandHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="67" column="54" lean-forward="true" selection-start-line="67" selection-start-column="54" selection-end-line="67" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/command/teacher/ChangeTeacherDayCommandHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -878,8 +872,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/util/ScheduleUIConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="18" column="107" lean-forward="true" selection-start-line="18" selection-start-column="107" selection-end-line="18" selection-end-column="107" />
+        <state relative-caret-position="240">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/component/dao/telegram/TelegramUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/command/group/ShowGroupLessonsCommandHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="69" column="46" lean-forward="true" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/command/BotCommandRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="51" column="43" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bot/telegram/hpk/services/bot/TelegramBotService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="99" column="46" lean-forward="true" selection-start-line="99" selection-start-column="46" selection-end-line="99" selection-end-column="46" />
+          <folding>
+            <element signature="e#4956#4957#0" expanded="true" />
+            <element signature="e#4977#4978#0" expanded="true" />
+            <element signature="e#5020#5021#0" expanded="true" />
+            <element signature="e#5042#5043#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

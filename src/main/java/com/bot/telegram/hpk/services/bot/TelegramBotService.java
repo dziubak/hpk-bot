@@ -122,8 +122,7 @@ public class TelegramBotService extends TelegramLongPollingBot {
 	private BotApiMethod<?> buildResponseErrorMessage(final long chatId ) {
 		SendMessage message = new SendMessage();
 		message.setChatId(chatId);
-		message.setText(EmojiParser.parseToUnicode(":thought_balloon:") + " Щось я тебе не розумію, введи /start  \n" +
-				"Тех. підтримка: @tuzhanskyi");
+		message.setText(EmojiParser.parseToUnicode(":thought_balloon:") + " Щось я тебе не розумію, введи /start");
 
 		return message;
 	}
@@ -131,9 +130,8 @@ public class TelegramBotService extends TelegramLongPollingBot {
 	public static BotApiMethod<?> buildCommandHandlingMessage(final long chatId ) {
 		SendMessage message = new SendMessage();
 		message.setChatId(chatId);
-		message.setText(EmojiParser.parseToUnicode(":tada:") + " Ой! Ти оновив мене до нової версії! \n" +
-				"Введи команду /start " + EmojiParser.parseToUnicode(":arrow_down:") +
-				"\nЯкщо виникли запитання: @tuzhanskyi");
+		message.setText(EmojiParser.parseToUnicode(":tada:") + " Помилка! \n" +
+				"Введи команду /start " + EmojiParser.parseToUnicode(":arrow_down:"));
 
 		return message;
 	}
